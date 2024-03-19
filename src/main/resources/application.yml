@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: unexpectedrollbackexception
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
